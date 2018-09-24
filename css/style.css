@@ -1,5 +1,60 @@
-body{
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900');
+
+html, body{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	width: 100%;
+	font-family: 'Roboto', sans-serif;
+}
+.bg1{
+	background-image: url(../img/1.jpg);
+}
+.bg_all{
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+	height: 100vh;
+}
+.wrapper{
+	max-width: 960px;
+	margin: 0 auto;
+}
+nav{
+	background-color: #ffc800;
+	padding: 13px 0;
+}
+.header{
+	display: flex;
+	align-items: center;
+	align-content: center;
+	justify-content: space-between;
+}
+.menu{
+	display: flex;
+}
+.menu li{
+	list-style-type: none;
+	margin-right: 40px;
+}
+.menu li a{
+	color:#000;
+	font-weight: 400;
+	font-size: 20px;
+	text-decoration: none;
+	padding: 10px 0;
+	border-bottom: 1px solid #000;
+}
+.phone{
+	font-size: 20px;
+	font-weight: 700;
+}
+.diztoplivo{
+
+}
+.pasport_bg{
+	background-image: url(../img/2.jpg);
+}
+.function{
+	background-image: url(../img/3.jpg);
 }
