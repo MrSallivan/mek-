@@ -234,6 +234,18 @@ p.addr{
 .hidden{
 	display: none;
 }
+form{
+	max-width: 347px;
+	max-height: 638px;
+	border:1px solid red;
+	padding: 10px;
+	margin: auto;
+	position: relative;
+}
+form input{
+	max-width: 287px;
+	max-height: 72px;
+}
 /*....................MEDIA..............................*/
 @media screen and (max-width:960px) {
 	.diztoplivo p{

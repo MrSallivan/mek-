@@ -6,23 +6,29 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>ООО "Мекс" - поставщик дизельного топлива №1</title>
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/magnific-popup.css">
-	
+	<link href="feedback/css/jquery.jgrowl.css" rel="stylesheet" type="text/css">
+	<link href="feedback/css/jquery.arcticmodal.css" rel="stylesheet" type="text/css">
+	<link href="css/style1.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/lightcase.css">
 </head>
 
 <body>
 	<div class="hidden">
-		<p>Заказ топлива</p>
-		<form id="form">
-			<input type="text" name="organization" placeholder="Организация"><br>
-			<input type="text" name="name" placeholder="Имя"><br>
-			<input type="text" name="fuel" placeholder="Количество топлива"><br>
-			<input type="text" name="phone" placeholder="Номер телефона">
-		</form>
-		<a href="#" class="button">
-			<span>Заказать</span>
-		</a>
+	    <div class="box-modal" id="small-modal">
+	        <div class="modal-close arcticmodal-close">x</div>
+	        <div class="modal-content-box">
+	            <!-- Здесь Ваша форма -->
+	            <form action="" name="form-1">
+	            	<input class="organization" name="organization" type="text" placeholder="Организация">
+				    <input class="name" name="name" type="text" placeholder="Ваше имя">
+				    <input class="fuel" name="fuel" type="text" placeholder="Количество литров топлива">
+				    <input class="tell" name="tell" type="text" placeholder="Ваш телефон">
+				    <input class="feedback" name="send" type="button" value="Заказать">
+				</form>
+	        </div>
+	    </div>
 	</div>
+
 	<div class="bg1 bg_all">
 		<nav>
 			<div class="wrapper">
@@ -46,7 +52,7 @@
 		<section class="diztoplivo">
 			<div class="wrapper">
 				<h1>дизельное топливо</h1>
-				<a href="#form" class="button popup">
+				<a href="#" class="button modal_btn">
 					<span>Оформить заказ</span>
 				</a>
 				<a href="" name="o_nas"></a>
@@ -60,10 +66,10 @@
 					нас как в надежном поставщике.</p>
 				<div class="svidetelstva">
 					<div class="svidetelstvo1">
-						<img src="img/sv1.jpg" alt="">
+						<a href="img/svb1.jpg" data-rel=lightcase:myCollection ><img src="img/sv1.jpg" alt=""></a>
 					</div>
 					<div class="svidetelstvo2">
-						<img src="img/sv2.jpg" alt="">
+						<a href="img/svb1.jpg" data-rel=lightcase:myCollection ><img src="img/sv2.jpg" alt=""></a>
 					</div>
 				</div>
 			</div>
@@ -140,9 +146,24 @@
 		</footer>
 		</div>
 	</section>
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="js/common.js"></script>
-	<script src="libs/magnific-popup/jquery.magnific-popup.js"></script>
+	<script src="libs/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="feedback/js/jquery.jgrowl.js"></script>
+	<script type="text/javascript" src="feedback/js/jquery.arcticmodal.js"></script>
+	<script type="text/javascript" src="feedback/js/feedback.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(document).on('click', '.modal_btn', function(){
+				$('#small-modal').arcticmodal();
+			});
+		});
+	</script>
+	<script type="text/javascript" src="js/lightcase.js"></script>
+	<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$('a[data-rel^=lightcase]').lightcase();
+	});
+	</script>
+	<script type="text/javascript" src="js/jquery.events.touch.js"></script>
 </body>
 
 </html>
