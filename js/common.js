@@ -1,5 +1,5 @@
 $(function () {
-
+    $(".popup").magnificPopup();
     //E-mail Ajax Send
     //Documentation & Example: https://github.com/agragregra/uniMail
     $("form").submit(function () { //Change

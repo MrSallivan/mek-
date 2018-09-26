@@ -6,11 +6,23 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>ООО "Мекс" - поставщик дизельного топлива №1</title>
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
 	
 </head>
 
 <body>
+	<div class="hidden">
+		<p>Заказ топлива</p>
+		<form id="form">
+			<input type="text" name="organization" placeholder="Организация"><br>
+			<input type="text" name="name" placeholder="Имя"><br>
+			<input type="text" name="fuel" placeholder="Количество топлива"><br>
+			<input type="text" name="phone" placeholder="Номер телефона">
+		</form>
+		<a href="#" class="button">
+			<span>Заказать</span>
+		</a>
+	</div>
 	<div class="bg1 bg_all">
 		<nav>
 			<div class="wrapper">
@@ -34,10 +46,8 @@
 		<section class="diztoplivo">
 			<div class="wrapper">
 				<h1>дизельное топливо</h1>
-				<a href="#" class="button">
-
+				<a href="#form" class="button popup">
 					<span>Оформить заказ</span>
-
 				</a>
 				<a href="" name="o_nas"></a>
 				<p>Добрый день! Мы рады приветствовать Вас на нашем сайте.
@@ -130,7 +140,9 @@
 		</footer>
 		</div>
 	</section>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="js/common.js"></script>
+	<script src="libs/magnific-popup/jquery.magnific-popup.js"></script>
 </body>
 
 </html>
