@@ -1,6 +1,6 @@
 <table border="0" style="background:#eee; color:#333; border:solid 1px #000000;">
   <tr>
-    <td colspan="2"><strong>Заголовок в теле письма</strong></td>
+    <td colspan="2"><strong>Данные из формы заказа</strong></td>
   </tr>
   <tr>
     <td>%%organization.title%%</td>
